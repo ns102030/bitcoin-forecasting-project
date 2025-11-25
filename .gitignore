@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Media
+*.mp4
+*.avi
+*.mov
+
+# Data (optional)
+*.csv
+!role2/predictions.csv
+!role3/predictions.csv
