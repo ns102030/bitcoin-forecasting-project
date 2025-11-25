@@ -28,14 +28,14 @@ Role 3 evaluates model performance and produces the final metrics and visualizat
 
 ## 📁 Folder Contents
 
-- **`role3_evaluation_notebook.ipynb`**  
+- **`bitcoin_model_evaluation.ipynb`**  
   Notebook that computes metrics and generates visualizations.
 
 - **`metrics_summary.csv`**  
   Final combined metrics table for all models.
 
-- **`plots/`**  
-  Folder containing exported charts produced by the notebook.
+- **`requirements.txt`**  
+  List of packages needed to run the script.
 
 ---
 
@@ -44,4 +44,4 @@ Role 3 evaluates model performance and produces the final metrics and visualizat
 Run the evaluation notebook with:
 
 ```bash
-jupyter notebook role3_evaluation_notebook.ipynb
+jupyter notebook bitcoin_model_evaluation.ipynb
