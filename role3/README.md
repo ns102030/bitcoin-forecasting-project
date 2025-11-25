@@ -32,4 +32,16 @@ Role 3 evaluates model performance and produces the final metrics and visualizat
   Notebook that computes metrics and generates visualizations.
 
 - **`metrics_summary.csv`**  
-  Final combined metrics ta
+  Final combined metrics table for all models.
+
+- **`plots/`**  
+  Folder containing exported charts produced by the notebook.
+
+---
+
+## ▶️ How to Use
+
+Run the evaluation notebook with:
+
+```bash
+jupyter notebook role3_evaluation_notebook.ipynb
