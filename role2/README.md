@@ -1,13 +1,7 @@
----
-
-  
-Role 2
-
-```markdown
 # Role 2 – Model Training and Predictions
 
 This folder contains all deliverables for **Role 2** of the Bitcoin Forecasting Project.  
-Role 2 trains forecasting models and produces prediction outputs for Role 3.
+Role 2 trains the forecasting models and produces the prediction outputs used by Role 3.
 
 ---
 
@@ -21,43 +15,29 @@ Role 2 trains forecasting models and produces prediction outputs for Role 3.
   - ARIMA  
   - LSTM  
 - Use **TimeSeriesSplit** for chronological cross-validation  
-- Generate out-of-sample predictions for every fold  
-- Export all predictions in a unified `predictions.csv` file  
+- Generate out-of-sample predictions for every model  
+- Export the unified `predictions.csv` file used by Role 3  
 
 ---
 
 ## 📁 Folder Contents
 
 - **`predictions.csv`**  
-  Contains actual values, model predictions, and the `Fold_ID` used by Role 3.
+  The combined predictions file containing actual values, model forecasts, and the corresponding `Fold_ID`.
 
 - **`notebooks/`**  
-  Jupyter notebooks for model training and prediction generation.
+  Jupyter notebooks used for model training and prediction generation.
 
 - **`scripts/`**  
-  Python utilities for reusable modeling logic.
+  Python scripts containing reusable training and validation utilities.
 
 ---
 
-## ▶️ `predictions.csv` Format
+## ▶️ How to Use
 
-Common columns:
+Load and inspect the predictions:
 
-- `Date`  
-- `Actual_Price`  
-- `Pred_KNN`  
-- `Pred_XGB`  
-- `Pred_LGBM`  
-- `Pred_ARIMA`  
-- `Pred_LSTM`  
-- `Fold_ID`  
-
----
-
-## ▶️ Running the Role 2 Notebook
-
-1. Create/activate virtual environment (optional):
-
-```bash
-python -m venv .venv
-.\.venv\Scripts\activate here.
+```python
+import pandas as pd
+df = pd.read_csv("predictions.csv")
+df.head()
